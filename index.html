@@ -1,2 +1,18 @@
-https://api.vk.com/method/wall.getById?posts="+postid+"&access_token="+e0e8d5abe0e8d5abe0e8d5ab21e08c3724ee0e8e0e8d5abbbc21c0e3223322553398427
-
+<html>
+  <head>
+    <script src="https://yastatic.net/jquery/2.1.4/jquery.min.js"></script>
+	  <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+      var post_url = "https://api.vk.com/method/wall.getById?posts="+postid+"&access_token="+e0e8d5abe0e8d5abe0e8d5ab21e08c3724ee0e8e0e8d5abbbc21c0e3223322553398427"
+      $.ajax({
+  	    url : post_url,
+  	    type : "GET",
+  	    dataType : "jsonp",
+  	    success : print_result
+  	  });
+      function print_result(result) {
+        console.log(result)
+      }
+    </script>
+  </head>
+</html>
