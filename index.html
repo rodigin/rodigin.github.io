@@ -23,7 +23,8 @@
 </script>
 	  <script>
       var postid = "-2158488_511156"
-      var post_url = "https://api.vk.com/method/wall.getById?posts="+postid+"&access_token="+"e0e8d5abe0e8d5abe0e8d5ab21e08c3724ee0e8e0e8d5abbbc21c0e3223322553398427"
+      var vers = 5.60
+      var post_url = "https://api.vk.com/method/wall.getById?posts="+postid+"&v="+vers+"&access_token="+"e0e8d5abe0e8d5abe0e8d5ab21e08c3724ee0e8e0e8d5abbbc21c0e3223322553398427"
       $.ajax({
   	    url : post_url,
   	    type : "GET",
