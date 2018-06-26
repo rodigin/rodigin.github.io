@@ -22,17 +22,15 @@
 	<script>
 	$("#answers_form").hide();
 var getToken = function getUrlParameter() {
-    var sURL = decodeURIComponent(window.location.hash.substring(14,99)),
+    var token = decodeURIComponent(window.location.hash.substring(14,99)),
         //sURL = sPageURL.split('#'),
 	token;
-	token = sURL[0,50]
-	console.log('URL:', sURL)
 	console.log('token:', token)
             return token;
 };
-var access_token2 = getToken();
+var access_token = getToken();
 //console.log(access_token)
-var access_token = "ccf158e7377cf593f7300f4145bbc69efce1f29caf97cf9dd1e3af7e812da9fe7c5b0093df261b658cfaf"
+//var access_token = "ccf158e7377cf593f7300f4145bbc69efce1f29caf97cf9dd1e3af7e812da9fe7c5b0093df261b658cfaf"
 var user_ids = new Array()
 var offset = 0
 var usersamountleft = 0
