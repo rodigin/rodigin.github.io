@@ -35,9 +35,9 @@ var getUrlParameter = function getUrlParameter(sParam) {
         }
     }
 };
-var access_token = getUrlParameter('access_token');
-console.log(access_token)
-var access_token2 = "e0e8d5abe0e8d5abe0e8d5ab21e08c3724ee0e8e0e8d5abbbc21c0e3223322553398427"
+//var access_token = getUrlParameter('access_token');
+//console.log(access_token)
+var access_token = "ccf158e7377cf593f7300f4145bbc69efce1f29caf97cf9dd1e3af7e812da9fe7c5b0093df261b658cfaf"
 var user_ids = new Array()
 var offset = 0
 var usersamountleft = 0
@@ -53,7 +53,7 @@ var vers = 5.90
 $("#start").click(function(){
 	var post_id = $("#post_id").val();
   function getpost(postid){
-    var post_url = "https://api.vk.com/method/wall.getById?posts="+postid+"&access_token="+access_token2+"&v="+vers;
+    var post_url = "https://api.vk.com/method/wall.getById?posts="+postid+"&access_token="+access_token+"&v="+vers;
     return $.ajax({
   	url : post_url,
   	type : "GET",
