@@ -92,7 +92,7 @@ $("#start").click(function(){
   function getpoll(poll_owner, poll_id){
     console.log(poll_owner);
     console.log(poll_id);
-
+    console.log(access_token);
     var poll_url = "https://api.vk.com/method/polls.getById?owner_id="+poll_owner+"&poll_id="+poll_id+"&access_token="+access_token+"&v="+vers;
     return $.ajax({
   	url : poll_url,
