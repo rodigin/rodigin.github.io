@@ -76,7 +76,7 @@ $("#start").click(function(){
 				return
       } else {
 				poll_owner = result.response[0].from_id
-				poll_id = result.response[0].attachments[a].poll.poll_id
+				poll_id = result.response[0].id
         getpoll(poll_owner,poll_id)
       }
     } else {
