@@ -202,7 +202,7 @@ $('#continue').click(function(){
 				}
 			var file = new Blob([file_string],{type: "text/plain;charset=utf-8"});
 			var filename = "Список проголосовавших.txt";
-			saveAs(file, filename);
+			FileSaver.saveAs(file, filename);
 			$("#warning").html("Для продолжения обновите страницу")
 		}
 	}
