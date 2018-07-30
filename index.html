@@ -185,7 +185,7 @@ $('#continue').click(function(){
 			if (!user_ids[a]){
 				user_ids[a] = new Array()
 			}
-			for (var b = 0; b < result.response[a].users.length; b++){
+			for (var b = 0; b < result.response[a].users.items.length; b++){
 				user_ids[a].push(result.response[a].users[b])
 			}
 		}
