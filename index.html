@@ -35,7 +35,7 @@ var answers_ids = new Array()
 var max_users_amount = 0
 var file_string = ''
 var vers = 5.90
-var postid = ''
+var post_id = ''
 
 $("#start").click(function(){
 	post_id = $("#post_id").val();
@@ -195,7 +195,7 @@ $('#continue').click(function(){
 					//console.log(a);
 				}
 			var file = new Blob([file_string],{type: "text/plain;charset=utf-8"});
-			var filename = "Список проголосовавших (" + postid  + ").txt";
+			var filename = "Список проголосовавших (" + post_id  + ").txt";
 			saveAs(file, filename);
 			$("#warning").html("Для продолжения обновите страницу")
 		}
