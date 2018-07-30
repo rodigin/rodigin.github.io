@@ -186,7 +186,7 @@ $('#continue').click(function(){
 				user_ids[a] = new Array()
 			}
 			for (var b = 0; b < result.response[a].users.items.length; b++){
-				user_ids[a].push(result.response[a].users[b])
+				user_ids[a].push(result.response[a].users.items[b])
 			}
 		}
 		offset += 1000
