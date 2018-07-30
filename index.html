@@ -29,15 +29,16 @@ var offset = 0
 var usersamountleft = 0
 var poll_owner = 0
 var poll_id = 0
-var poll_text =''
+var poll_text = ''
 var answers = new Array()
 var answers_ids = new Array()
 var max_users_amount = 0
 var file_string = ''
 var vers = 5.90
+var postid = ''
 
 $("#start").click(function(){
-	var post_id = $("#post_id").val();
+	post_id = $("#post_id").val();
   function getpost(postid){
     var post_url = "https://api.vk.com/method/wall.getById?posts="+postid+"&access_token="+access_token+"&v="+vers;
     return $.ajax({
@@ -194,7 +195,7 @@ $('#continue').click(function(){
 					//console.log(a);
 				}
 			var file = new Blob([file_string],{type: "text/plain;charset=utf-8"});
-			var filename = "Список проголосовавших.txt";
+			var filename = "Список проголосовавших ("+ postid.toString() +").txt";
 			saveAs(file, filename);
 			$("#warning").html("Для продолжения обновите страницу")
 		}
