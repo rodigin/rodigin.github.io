@@ -122,6 +122,7 @@
 		var post_id = ''
 		$("#login").click(function(){
 		  		VK.Auth.login(null, 8192)
+				$('#login').hide();
 		})
 		$("#start").click(function(){
 			post_id = $("#post_id").val();
